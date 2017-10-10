@@ -1,0 +1,15 @@
+"E:\Programs\arm\bin\armproc.dll" 
+
+"E:\Programs\arm\bin\armstlink2.dll" 
+
+"E:\Documents\ARMCodes\Micro-ECC\Debug\Exe\microECCBench.out" 
+
+--plugin "E:\Programs\arm\bin\armbat.dll" 
+
+--device_macro "E:\Programs\arm\config\debugger\ST\STM32F4xx.dmac" 
+
+--flash_loader "E:\Programs\arm\config\flashloader\ST\FlashSTM32F4xxx.board" 
+
+
+
+
