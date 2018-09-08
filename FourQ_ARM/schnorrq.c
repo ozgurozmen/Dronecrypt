@@ -221,7 +221,7 @@ ECCRYPTO_STATUS BPVOnline(const unsigned char* SecretKey, const unsigned char* P
 	memmove(publicTemp,PublicKey +64*index[1],64);
 	
 	point_setup((point_affine*)publicTemp, TempExtproj);
-	R1_to_R3(TempExtproj, TempExtprojPre);
+	R1_to_R2(TempExtproj, TempExtprojPre);
 	
 	eccadd(TempExtprojPre, AddedExtproj);
 	add_mod_order((digit_t*)secretTemp, (digit_t*)secretTemp2, S);
@@ -232,7 +232,7 @@ ECCRYPTO_STATUS BPVOnline(const unsigned char* SecretKey, const unsigned char* P
 		memmove(publicTemp,PublicKey +64*index[k+2],64);
 
 		point_setup((point_affine*)publicTemp, TempExtproj);
-		R1_to_R3(TempExtproj, TempExtprojPre);
+		R1_to_R2(TempExtproj, TempExtprojPre);
 		
 		eccadd(TempExtprojPre, AddedExtproj);
 		add_mod_order((digit_t*)secretTemp, S, S);
